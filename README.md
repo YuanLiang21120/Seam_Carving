@@ -19,7 +19,7 @@ Spatial cost matrix is the same as forward energy map. We use the previous frame
 
 <img src="img\spatial.PNG" style="zoom:50%;" />
 
-![S'_v(x_b, x_a, y) = \sum_{k=x_a}^{x_b-1} \lvert G_{k,y}^v-G_{k,y}^d\rvert + \sum_{k=x_a+1}^{x_b} \lvert G_{k,y}^v - G_{k-1,y}^d\rvert](https://latex.codecogs.com/svg.latex?\Large&space;x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}) 
+![S'_v(x_b, x_a, y) = \sum_{k=x_a}^{x_b-1} \lvert G_{k,y}^v-G_{k,y}^d\rvert + \sum_{k=x_a+1}^{x_b} \lvert G_{k,y}^v - G_{k-1,y}^d\rvert](https://latex.codecogs.com/svg.latex?\Large&space;S'_v(x_b, x_a, y) = \sum_{k=x_a}^{x_b-1} \lvert G_{k,y}^v-G_{k,y}^d\rvert + \sum_{k=x_a+1}^{x_b} \lvert G_{k,y}^v - G_{k-1,y}^d\rvert) 
 
 #### Combining both temporal and spatial coherence
 
