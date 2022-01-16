@@ -18,9 +18,7 @@ In our code, we have a special function to calculate the total temporal cost mat
 Spatial cost matrix is the same as forward energy map. We use the previous frame seams and use the energy map to produce the next frame energy map after the seam-carving is done. Then the spatial difference is the forward energy map and the current energy map. It is also a component to the final cost matrix.
 
 <img src="img\spatial.PNG" style="zoom:50%;" />
-$$
-S'_v(x_b, x_a, y) = \sum_{k=x_a}^{x_b-1} \lvert G_{k,y}^v-G_{k,y}^d\rvert + \sum_{k=x_a+1}^{x_b} \lvert G_{k,y}^v - G_{k-1,y}^d\rvert
-$$
+![S'_v(x_b, x_a, y) = \sum_{k=x_a}^{x_b-1} \lvert G_{k,y}^v-G_{k,y}^d\rvert + \sum_{k=x_a+1}^{x_b} \lvert G_{k,y}^v - G_{k-1,y}^d\rvert](https://latex.codecogs.com/svg.latex?x%3D%5Cfrac%7B-b%5Cpm%5Csqrt%7Bb%5E2-4ac%7D%7D%7B2a%7D)
 
 #### Combining both temporal and spatial coherence
 
